@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-let sequelize;
+const sequelize;
 
 if (process.env.DB_URL) {
   sequelize = new Sequelize(process.env.DB_URL);
